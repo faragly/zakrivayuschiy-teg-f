@@ -4,9 +4,10 @@ import stylelint from 'vite-plugin-stylelint';
 
 export default defineConfig({
   base: '/zakrivayuschiy-teg-f/',
+  publicDir: false,
   resolve: {
     alias: {
-      '@fonts': resolve(__dirname, 'src/fonts'),
+      '@fonts': resolve(__dirname, 'fonts'),
     }
   },
   plugins: [
