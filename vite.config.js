@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import stylelint from 'vite-plugin-stylelint';
 
@@ -7,18 +7,18 @@ export default defineConfig({
   resolve: {
     alias: {
       '@fonts': resolve(__dirname, 'src/fonts'),
-    }
+    },
   },
   plugins: [
     stylelint({
       fix: true,
-    })
+    }),
   ],
   css: {
     preprocessorOptions: {
-        scss: {
-            silenceDeprecations: ['legacy-js-api'],
-        },
+      scss: {
+        silenceDeprecations: ['legacy-js-api'],
+      },
     },
   },
-})
+});
